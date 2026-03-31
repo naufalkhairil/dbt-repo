@@ -3,7 +3,8 @@
 This repository is for learning dbt (data build tool) purposes.
 
 ## dbt Projects
+List projects
 
-| Project | Path |
-|---------|------|
-| ecommerce_order | `ecommerce_order/` |
+| Project |
+|---------|
+| [Ecommerce Order](ecommerce_order) |
