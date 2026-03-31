@@ -2,8 +2,7 @@
 
 This repository is for learning dbt (data build tool) purposes.
 
-## dbt Projects
-List projects
+## List projects
 
 | Project |
 |---------|
