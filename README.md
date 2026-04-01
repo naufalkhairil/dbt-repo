@@ -6,4 +6,4 @@ This repository is for learning dbt (data build tool) purposes.
 
 | Project |
 |---------|
-| [Ecommerce Order](ecommerce_order) |
+| [Ecommerce Order](projects/ecommerce_order/) |
