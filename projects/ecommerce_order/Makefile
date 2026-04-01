@@ -11,8 +11,3 @@ run-gold:
 # Run gold models with duckdb gold target
 run-gold-duckdb:
 	dbt run --profiles-dir /home/pal/ICS/github/dbt-repo/projects/ecommerce_order  --target gold_duckdb__order --select gold
-
-# Build both (if needed)
-build-all:
-	dbt build --profiles-dir /home/pal/ICS/github/dbt-repo/projects/ecommerce_order  --target silver --select silver
-	dbt build --profiles-dir /home/pal/ICS/github/dbt-repo/projects/ecommerce_order  --target gold --select gold
