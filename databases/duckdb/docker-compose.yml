@@ -2,11 +2,15 @@ services:
   duckdb:
     image: duckdb/duckdb
     user: "${UID:-1000}:${GID:-1000}"
-    stdin_open: true
-    tty: true
     volumes:
       - ./workspace:/workspace
-    working_dir: /workspace
+      - ./home:/home/duckdb
+    environment:
+      - HOME=/home/duckdb
+    ports:
+      - "4213:4213"
+    stdin_open: true
+    tty: true
     networks:
       - dbt_repo_network
 

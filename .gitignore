@@ -1,4 +1,13 @@
 .venv/
 venv/
 
+
+target/
+dbt_packages/
+logs/
+*venv/
+
+.user.yml
+
 databases/postgres/data
+databases/duckdb/home/*
