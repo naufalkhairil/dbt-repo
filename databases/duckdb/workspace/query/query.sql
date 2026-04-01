@@ -1,0 +1,1 @@
+SELECT * FROM read_csv_auto('/workspace/data/df_OrderItems.csv');

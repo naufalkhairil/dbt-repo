@@ -1,0 +1,4 @@
+.venv/
+venv/
+
+databases/postgres/data

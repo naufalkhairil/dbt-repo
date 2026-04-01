@@ -1,0 +1,15 @@
+services:
+  duckdb:
+    image: duckdb/duckdb
+    user: "${UID:-1000}:${GID:-1000}"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./workspace:/workspace
+    working_dir: /workspace
+    networks:
+      - dbt_repo_network
+
+networks:
+  dbt_repo_network:
+    external: true
